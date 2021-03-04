@@ -1,0 +1,46 @@
+<!--
+Textarea/Radio/Checkbox
+Create a page that simulates a school quiz, containing multiple questions:
+The first question should contain multiple options out of which the student can select only one
+The second quiz question has multiple options out of which the user can select several
+The third question should require from user to insert some long text
+-->
+
+<!DOCTYPE 
+html>
+<html>
+    <head>    
+        <title>SchoolQuiz</title>
+    </head>
+
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif;">School Quiz</h1> 
+    <hr>    
+
+    <h2 style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;">1. Student moze izabrati samo jedan od ponudjenih odgovora?</h2>
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor" type="radio" checked="checked"> Odgovor 1</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor" type="radio"> Odgovor 2</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor" type="radio"> Odgovor 3</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor" type="radio"> Odgovor 4</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor" type="radio"> Odgovor 5</p>
+    <hr>    
+    <br>
+    <h2 style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;">2. Student moze izabrati vise ponudjenih odgovora?</h2>
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor1[]" type="checkbox"> Odgovor 1</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor1[]" type="checkbox"> Odgovor 2</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor1[]" type="checkbox"> Odgovor 3</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor1[]" type="checkbox"> Odgovor 4</p>    
+    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 14px;" > <input name="odgovor1[]" type="checkbox"> Odgovor 5</p>
+    <hr>    
+    <br>
+    <h2 style="font-family: Arial, Helvetica, sans-serif;font-size: 16px;">3. Student treba da odgovori sa vise recenica?</h2>
+    <textarea style="font-family: Arial, Helvetica, sans-serif;"name="odgovor2" cols="80" rows="10">Ovde napisati odgovor...</textarea>
+    <br>    
+    <br>    
+    <input style="font-family: Arial, Helvetica, sans-serif;font-size: 16px; font-weight: bold;"  name="sent" type="submit" value="Posalji odgovore">
+
+
+
+
+
+</body></html>
