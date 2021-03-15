@@ -1,0 +1,79 @@
+<!--
+Blog Exercise
+
+Home Page content
+● Create a page with two columns
+● Width of the left column is 300px
+● Right column stretches to cover the rest of the screen
+● Left column content
+○ Logo image with height set to 250px
+○ Under the logo, there should be a list of links
+○ One of the links should be &quot;Contact&quot;
+○ The link should link to &quot;./contact.html&quot; page
+● Right column content
+● There should be two posts in form of groups
+● The first group content:
+○ Title
+○ Embedded YouTube video
+● The second group content:
+○ Title
+○ Video (HTML5) that you will find on the web
+
+Contact Page content
+● Embedded Google Map on the page
+● Link for getting back to the “Home” page
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Exercise</title>
+</head>
+<body>
+    <h1>Home page</h1>
+        <table border="2" width="100%">
+            <tr valign="top">
+                <td border='1' width="300px" align="center">
+                    Logo:
+                    <br>
+                    <img width="200" hight="250" src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" alt="Google logo">
+                    <br>
+                    Links:
+                    <br>
+                    <ul>
+                        <li><a href="https://sr.wikipedia.org/sr-ec/%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B0"target="_blank">Srbija</a></li>
+                        <li><a href="https://sr.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D1%98%D0%B0"target="_blank">Portugalija</a></li>
+                        <li><a href="https://sr.wikipedia.org/wiki/%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%98%D0%B0"target="_blank">Italija</a></li>
+                        <li><a href="./ContactPage.html">Contact</a></li>
+                    </ul>
+                </td>
+                <td border='1' align="center">
+                    <br>
+                    <br>
+                    <label>
+                        Title:
+                        <br>
+                        <br>
+                        Youtube video:
+                        <br>
+                        <br>
+                        <iframe width="400" height="300" src="https://www.youtube.com/embed/9-9WTUaEdWc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br>
+                        <br>
+                    </label>
+                    <label>
+                        Title:
+                        <br>
+                        <br>
+                        Video:
+                        <br>
+                        <video width='400' height="300" controls>
+                            <source src="video.mp4" type="video/mp4">
+                            <source src="video.ogg" type="video/ogg">
+                        </video>
+                    </label>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>

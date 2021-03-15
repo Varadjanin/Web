@@ -1,0 +1,109 @@
+<!--
+    Labels/Grouping
+● Creates a form used for catering reservations
+
+● The form contains multiple elements split into groups
+● Each element should have a label assigned to it
+First group
+● Name of the group should be &quot;Personal data&quot;
+● The first field is for the name
+● The second one is for the email address
+● The third is for the phone number
+Second group
+● Name of the group should be &quot;Location&quot;
+● It should contain fields for:
+○ City
+○ Street
+○ Street number
+
+Third group
+● Name of the group should be &quot;Event info&quot;
+● The first element is dropdown containing the following options:
+○ birthday
+○ wedding (should be selected by default)
+○ company
+● The second element is for getting number of expected guests and it’s
+an input type element
+● Placeholder is a number you choose
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catering Reservation Form</title>
+    </head>
+    <body>
+        <form action="file:///C:/Users/varad/Desktop/BIT%20Java%20kurs/Web/Forms/labelsGrouping.html">
+            <fieldset>
+                <legend>Catering Reservation Form</legend>
+                <br>
+                <hr>
+                <br>
+                <label>
+                    Personal data:
+                    <br>
+                    <br>
+                    Name:
+                    <input type="text" name="name" required>
+                    <br>
+                    <br>
+                    Email address:
+                    <input type="email" name="email" required>
+                    <br>
+                    <br>
+                    Phone number:
+                    <input type="tel" name="phone" pattern= {0123456789} required> 
+                    <br>
+                    <br>
+                </label>
+                <br>
+                <hr>
+                <br>
+                <label>
+                    Location:
+                    <br>
+                    <br>
+                    City:
+                    <input type="text" name="city" required>
+                    <br>
+                    <br>
+                    Street:
+                    <input type="text" name="street" required>
+                    <br>
+                    <br>
+                    Street number:
+                    <input type="number" name="streetnumber" required>
+                    <br>
+                    <br>
+                </label>
+                <br>
+                <hr>
+                <br>
+                <label>
+                    Event info:
+                    <br>
+                    <br>
+                    Choose the event:
+                    <select name="event">
+                    <br>
+                    <option value="birthday">Birthday</option>
+                    <br>
+                    <option value="wedding" selected="selected">Wedding</option>
+                    <br>
+                    <option value="company">Company</option>
+                    <br>
+                    </select>
+                    <br>
+                    <br>
+                    Enter the number of guests:
+                    <input type="number" name="guestnumber" placeholder="300">
+                    <br>
+                </label>
+                <br>
+                <br>           
+                <input name="submit" type="submit" value="Send"> 
+            </fieldset>
+        
+        </form>
+    </body>
+</html>
