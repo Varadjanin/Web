@@ -1,0 +1,81 @@
+
+/* -----------Layout---------- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Calibri", sans-serif, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+    background-color: #BDBDBD;
+}
+
+.holder {
+    width: 700px;
+    margin: 20px auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background: #14709e;
+}
+
+/* --------Hedings------- */
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    background: #080000;
+    color: white;
+}
+
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    text-align: left;
+    background: #1d021b;
+    color: white;
+}
+
+.title {
+    background-color: #1b001a;
+
+}
+
+/* --------Content-------- */
+
+img {
+    height: 600px;
+    margin: 40px auto 40px;
+    display: block;
+}
+
+table {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    background: #dbade4;
+    border-collapse: collapse;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+tr {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+td {
+    padding: 5px 0;
+}
+
+.even {
+    background-color: #BDBDBD;
+}
+
+
+td:first-child {
+    width: 400px;
+    padding-left: 10px;
+}
+
+p#footer {
+    margin-top: 200px;
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
