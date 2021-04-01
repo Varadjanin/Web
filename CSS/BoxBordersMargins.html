@@ -1,0 +1,99 @@
+<!--
+Size
+Create a page containing two paragraphs.
+The first paragraph should have a yellow background
+The second paragraph should have a red background
+Add a lot of text to both of them
+
+Fixed size
+The first paragraph has width of 400px and height of 500px
+The second should have 600px width and 300px height
+Paragraph text should not overflow the box
+
+Dynamic size
+Max width of the first paragraph should be 300px
+Max height of the second one should be 200px
+The first paragraph text should be cut if it's bigger than the box
+The second paragraph text can overflow the paragraph (text can be bigger than the paragraph box)
+  
+Borders
+Create three paragraphs on the page
+All of them should have a yellow background
+Each paragraph should have a 5px thick border
+The first and the last paragraphs should have red dashed borders
+The middle one should have green solid borders
+
+Padding
+Use the previous example or create three new paragraphs with bg color
+Set padding for each paragraph
+The first and the third should have a 50px padding around all sides
+The middle one should have a 50px top padding only
+
+
+Margins
+Use the previous example and add margins to each element
+The first should be 300px wide and should have 50px margins around all sides
+The second should be 400px wide and it should be horizontally centered on the screen
+The third one should be 200px wide and should have a 100px wide left margin
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        p.prvi {
+            background-color: yellow;
+            width: 400px;
+            height: 500px;
+            max-width: 300px;
+            overflow: hidden;
+        }
+
+        p.drugi {
+            background-color: red;
+            width: 600px;
+            height: 300px;
+            max-height: 200px;
+            overflow: scroll;
+        }
+
+        div {
+            background-color: yellow;
+            border-width: 5px;
+        }
+
+        .treci {
+            border: red dashed;
+            padding: 50px;
+            width: 300px;
+            margin: 50px;
+        }
+
+        .cetvrti {
+            border: green solid;
+            padding-top: 50px;
+            width: 400px;
+            margin: auto;
+        }
+
+        .peti {
+            border: red dashed;
+            padding: 50px;
+            width: 200px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 font-family: 'Chango', cursive;>Page title</h1>
+    <p class="prvi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <q class="prviQuote">Praesent ac sodales justo.</q> Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, rhoncus vel ante. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst.</p>
+    <p class="drugi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst.</p>
+    <div>
+    <p class="treci">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu.</span> Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, rhoncus vel ante. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. <q class="treciQuote">Donec vehicula scelerisque nisl quis tristique.</q> In hac habitasse platea dictumst.</p>
+    <p class="cetvrti">In sed nunc ac odio molestie viverra. Integer vitae sagittis neque. Nullam vel lectus vel quam semper malesuada. Mauris luctus pretium nisl, eu placerat dolor ultricies sollicitudin. Etiam maximus velit vel dui semper, ut rhoncus ante pharetra. Quisque id metus nunc. Etiam cursus venenatis lectus. Ut eu eros vulputate, posuere augue at, tincidunt sem. Donec sit amet lacus dui. Morbi scelerisque enim eget nisl malesuada vulputate. Vivamus scelerisque vitae ligula vitae porttitor. Sed tempus condimentum congue. In purus turpis, luctus eu porttitor ut, dapibus nec quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse non suscipit urna.</p>
+    <p class="peti">In sed nunc ac odio molestie viverra. Integer vitae sagittis neque. Nullam vel lectus vel quam semper malesuada. Mauris luctus pretium nisl, eu placerat dolor ultricies sollicitudin. Etiam maximus velit vel dui semper, ut rhoncus ante pharetra. Quisque id metus nunc. Etiam cursus venenatis lectus. Ut eu eros vulputate, posuere augue at, tincidunt sem. Donec sit amet lacus dui. Morbi scelerisque enim eget nisl malesuada vulputate. Vivamus scelerisque vitae ligula vitae porttitor. Sed tempus condimentum congue. In purus turpis, luctus eu porttitor ut, dapibus nec quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse non suscipit urna.</p>
+    </div>
+</body>
+</html>

@@ -8,12 +8,12 @@ body {
     background-color: #BDBDBD;
 }
 
-.holder {
+.holder {   /*nova class*/
     width: 700px;
     margin: 20px auto;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    background: #14709e;
+    background: #021d2b;
 }
 
 /* --------Hedings------- */
@@ -46,7 +46,7 @@ img {
     margin: 40px auto 40px;
     display: block;
 }
-
+/*
 table {
     width: 100%;
     color: rgb(0, 0, 0);
@@ -79,3 +79,4 @@ p#footer {
     border-top: 1px solid white;
     padding-top: 20px;
 }
+*/

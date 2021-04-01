@@ -1,0 +1,176 @@
+<!--
+Browser-Safe Font Family
+● Create a page with multiple paragraphs
+● Apply different fonts to each of them
+● Add a quote to each paragraph and define a different font for each quote
+
+Font size/weight/style
+● Use HTML/CSS from the previous example
+● Apply global font size/weight
+● Override the global font for the first paragraph (apply some other font)
+● Apply “oblique” style to the text in the second paragraph
+● Create a span element somewhere inside the third paragraph
+● Increase weight of the text inside the span and make it italic
+
+@font-face
+Take some time googling and find websites that provide fonts
+Downloading and including a font:
+○ Go to Google Fonts and download some font
+○ Include that font on page
+○ Apply the font to first paragraph
+Font via url from remote server:
+○ Go to Google Fonts and get the link for the font
+○ Include that font on the page using a link
+○ Apply the font to the page title
+
+Uppercase & Lowercase/Underline & Strikethrough
+● Create a page with two paragraphs
+● Use CSS to transform all the letters in the first paragraph to uppercase and
+underline them
+● Transform the text in the second paragraph to lowercase and apply strike
+to it
+
+Line/Word/Letter Spacing (Challenge for students)
+● Create a page with three paragraphs
+● Spacing between characters in the first paragraph should be 5px
+● Line height of the second paragraph is 200% of the original line height
+● The third paragraph should not be styled
+
+Alignment
+● Align text in the previous examples:
+○ First paragraph to the left
+○ Second to the right
+○ Third should be centered
+
+Shadow/Pseudo-Classes
+Create a page with a list of links to some websites
+Shadow
+● Set the default color for that list
+● Add text shadow to text of all the list elements
+Pseudo-Classes
+● Each link that is not clicked yet should be red
+● Each visited link should be black
+
+● Hovering over text should make it green
+● Clicking and holding the link should make it blue
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style type="text/css">
+
+
+        .treciFont {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        .prviQuote {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .drugiQuote {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .treciQuote {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-weight: normal;
+        }
+
+        .prviFont {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            letter-spacing: 5px;
+        }
+
+        .drugiFont {
+            font-family: 'Lucida Sans', Verdana, sans-serif;
+            font-style: oblique;
+            text-align: right;
+            line-height: 200%;
+        }
+
+        span {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        @font-face {
+            font-family: 'Chango', cursive;
+            src: url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+        }
+
+        @font-face {
+            font-family:'Dancing Script';
+            src: url("./DancingScript-VariableFont_wght.ttf");
+        }
+
+        .prviFont {
+            font-family:'Dancing Script';
+        }
+
+        .izmena1 {
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .izmena2 {
+            text-transform: lowercase;
+            text-decoration: line-through;
+        }
+
+        a:link {
+            font-size: 100px;
+            font-weight: bold;
+            color: rgb(5, 212, 178);
+        }
+
+        li {
+            text-shadow: -6px -9px 1px rgba(221, 255, 0, 0.86);
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:hover {
+            color:forestgreen;
+        }
+
+        a:focus {
+            color: blue;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 font-family: 'Chango', cursive;>Page title</h1>
+    <p class="prviFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <q class="prviQuote">Praesent ac sodales justo.</q> Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, rhoncus vel ante. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst.</p>
+    <p class="drugiFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu. Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, <q class="drugiQuote">rhoncus vel ante</q>. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. Donec vehicula scelerisque nisl quis tristique. In hac habitasse platea dictumst.</p>
+    <p class="treciFont">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span>Praesent ac sodales justo. Vestibulum ornare massa sem, eu scelerisque orci tempor eu.</span> Ut mi ligula, tincidunt a elit at, tincidunt accumsan neque. Nunc magna sem, varius non consectetur ac, rhoncus vel ante. Ut sit amet scelerisque turpis, at egestas massa. In felis nisl, euismod non bibendum in, condimentum eu sem. Etiam in aliquam lectus, elementum tempus ipsum. Ut tempus est vitae mauris placerat pellentesque. Donec laoreet arcu a diam luctus, euismod posuere arcu convallis. <q class="treciQuote">Donec vehicula scelerisque nisl quis tristique.</q> In hac habitasse platea dictumst.</p>
+    <p class="izmena1">In sed nunc ac odio molestie viverra. Integer vitae sagittis neque. Nullam vel lectus vel quam semper malesuada. Mauris luctus pretium nisl, eu placerat dolor ultricies sollicitudin. Etiam maximus velit vel dui semper, ut rhoncus ante pharetra. Quisque id metus nunc. Etiam cursus venenatis lectus. Ut eu eros vulputate, posuere augue at, tincidunt sem. Donec sit amet lacus dui. Morbi scelerisque enim eget nisl malesuada vulputate. Vivamus scelerisque vitae ligula vitae porttitor. Sed tempus condimentum congue. In purus turpis, luctus eu porttitor ut, dapibus nec quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse non suscipit urna.</p>
+    <p class="izmena2">In sed nunc ac odio molestie viverra. Integer vitae sagittis neque. Nullam vel lectus vel quam semper malesuada. Mauris luctus pretium nisl, eu placerat dolor ultricies sollicitudin. Etiam maximus velit vel dui semper, ut rhoncus ante pharetra. Quisque id metus nunc. Etiam cursus venenatis lectus. Ut eu eros vulputate, posuere augue at, tincidunt sem. Donec sit amet lacus dui. Morbi scelerisque enim eget nisl malesuada vulputate. Vivamus scelerisque vitae ligula vitae porttitor. Sed tempus condimentum congue. In purus turpis, luctus eu porttitor ut, dapibus nec quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse non suscipit urna.</p>
+
+    <p>
+        <ul>
+            <li><a href="https://sr.wikipedia.org/sr-ec/%D0%A1%D1%80%D0%B1%D0%B8%D1%98%D0%B0"target="_blank">Srbija</a></li>
+            <li><a href="https://sr.wikipedia.org/wiki/%D0%9F%D0%BE%D1%80%D1%82%D1%83%D0%B3%D0%B0%D0%BB%D0%B8%D1%98%D0%B0"target="_blank">Portugalija</a></li>
+            <li><a href="https://sr.wikipedia.org/wiki/%D0%98%D1%82%D0%B0%D0%BB%D0%B8%D1%98%D0%B0"target="_blank">Italija</a></li>
+        </ul>
+    </p>
+
+
+</body>
+</html>
