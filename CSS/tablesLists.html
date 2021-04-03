@@ -1,0 +1,153 @@
+<!--
+Lists
+Markers
+Create four lists (two unordered and two ordered lists)
+The first unordered list should have circles as item markers
+The second one (unordered) should use squares as markers
+The third one (ordered) should use upper alphabetics
+The last list (ordered) should use the Roman numbers 
+
+Image Marker/Position 
+Create two additional unordered lists
+Set images as item markers for both of the lists
+Both lists should be 200px wide, and should have a lot of text in each item
+The markers in the second list should be inside a box
+
+
+Table  
+Create a table with five columns and 5 rows
+Table is intended to display phone specifications
+The table should be centered on the page
+Table header row should be red
+The second column should contain images whose height should be 100px
+Each cell should have top and bottom padding of 10px
+Row background color changes to yellow on hover
+
+Extra task: Each odd row should have gray bg coloro
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        .prvaUl{
+            list-style-type: circle;
+        }
+        .drugaUl{
+            list-style-type: square;
+        }
+        .prvaOl{
+            list-style-type: upper-alpha;
+        }
+        .drugaOl{
+            list-style-type: upper-roman;
+        }
+        .trecaUl{
+            list-style-image: url("super-mario-png.png");
+            width: 200px;
+        }
+        .cetvrtaUl{
+            list-style-image: url("super-mario-png.png");
+            width: 200px;
+            list-style-position: inside;
+        }
+        table{
+            border: 0.5px solid black;
+            margin: 0px auto;
+            padding: 10px;
+            border-spacing: 0px;
+        }
+        th{
+            background-color: red;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        tr,td{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        img{
+            width: 100px;
+            height: 100px;
+        }
+        tr:nth-child(odd){
+            background-color: rgb(206, 203, 203);
+        }
+        tr:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <ul class="prvaUl">
+        <li>aaaaaaaaaaaaaa</li>
+        <li>bbbbbbbbbbbbbb</li>
+    </ul>
+    <ul class="drugaUl">
+        <li>cccccccccccccc</li>
+        <li>dddddddddddddd</li>
+    </ul>
+    <ol class="prvaOl">
+        <li>eeeeeeeeeeeeee</li>
+        <li>ffffffffffffff</li>
+    </ol>
+    <ol class="drugaOl">
+        <li>ggggggggggggggg</li>
+        <li>hhhhhhhhhhhhhhh</li>
+    </ol>
+    <ul class="trecaUl">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum enim eget ligula tincidunt, vel scelerisque enim auctor. Duis lectus neque, viverra in quam at, sollicitudin vulputate dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel ligula lorem. Duis hendrerit vestibulum risus, a posuere est tristique ac. Vivamus feugiat tellus at velit auctor feugiat. Morbi at dignissim eros. In fringilla aliquet luctus. Vivamus dignissim eros vitae tortor pretium iaculis. Duis sit amet magna dignissim, tempor purus sed, tincidunt diam. Phasellus dictum nulla a ex auctor, at porttitor erat rutrum. Suspendisse ut dui id velit pulvinar semper vel a ligula.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum enim eget ligula tincidunt, vel scelerisque enim auctor. Duis lectus neque, viverra in quam at, sollicitudin vulputate dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel ligula lorem. Duis hendrerit vestibulum risus, a posuere est tristique ac. Vivamus feugiat tellus at velit auctor feugiat. Morbi at dignissim eros. In fringilla aliquet luctus. Vivamus dignissim eros vitae tortor pretium iaculis. Duis sit amet magna dignissim, tempor purus sed, tincidunt diam. Phasellus dictum nulla a ex auctor, at porttitor erat rutrum. Suspendisse ut dui id velit pulvinar semper vel a ligula.</li>
+    </ul>
+    <ul class="cetvrtaUl">
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum enim eget ligula tincidunt, vel scelerisque enim auctor. Duis lectus neque, viverra in quam at, sollicitudin vulputate dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel ligula lorem. Duis hendrerit vestibulum risus, a posuere est tristique ac. Vivamus feugiat tellus at velit auctor feugiat. Morbi at dignissim eros. In fringilla aliquet luctus. Vivamus dignissim eros vitae tortor pretium iaculis. Duis sit amet magna dignissim, tempor purus sed, tincidunt diam. Phasellus dictum nulla a ex auctor, at porttitor erat rutrum. Suspendisse ut dui id velit pulvinar semper vel a ligula.</li>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum enim eget ligula tincidunt, vel scelerisque enim auctor. Duis lectus neque, viverra in quam at, sollicitudin vulputate dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras vel ligula lorem. Duis hendrerit vestibulum risus, a posuere est tristique ac. Vivamus feugiat tellus at velit auctor feugiat. Morbi at dignissim eros. In fringilla aliquet luctus. Vivamus dignissim eros vitae tortor pretium iaculis. Duis sit amet magna dignissim, tempor purus sed, tincidunt diam. Phasellus dictum nulla a ex auctor, at porttitor erat rutrum. Suspendisse ut dui id velit pulvinar semper vel a ligula.</li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Image</th>
+            <th>RAM</th>
+            <th>Camera</th>
+            <th>Internal memory</th>
+        </tr>
+        <tr>
+            <td>Samsung S8+</td>
+            <td><img src="https://images.samsung.com/is/image/samsung/p5/rs/smartphones/galaxy-s8/images/gallery/galaxy-s8-plus_gallery-color_big-c1-02.jpg?$ORIGIN_JPG$" alt="Samsung S8+ picture"></td>
+            <td>6GB</td>
+            <td>12Mpx</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>iPhone X</td>
+            <td><img src="https://istyleprod.s3.amazonaws.com/RS/Servis/Programi%20zamene/iphone_x_hero.png" alt="iPhone X picture"></td>
+            <td>4GB</td>
+            <td>12Mpx</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>LG G6</td>
+            <td><img src="data:image/jpeg;base64,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" alt="LG G6 picture"></td>
+            <td>6GB</td>
+            <td>12Mpx</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>Samsung S8+</td>
+            <td><img src="https://images.samsung.com/is/image/samsung/p5/rs/smartphones/galaxy-s8/images/gallery/galaxy-s8-plus_gallery-color_big-c1-02.jpg?$ORIGIN_JPG$" alt="Samsung S8+ picture"></td>
+            <td>6GB</td>
+            <td>12Mpx</td>
+            <td>128GB</td>
+        </tr>
+        <tr>
+            <td>iPhone X</td>
+            <td><img src="https://istyleprod.s3.amazonaws.com/RS/Servis/Programi%20zamene/iphone_x_hero.png" alt="iPhone X picture"></td>
+            <td>4GB</td>
+            <td>12Mpx</td>
+            <td>128GB</td>
+        </tr>
+    </table>
+</body>
+</html>
