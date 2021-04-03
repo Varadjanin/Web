@@ -1,0 +1,107 @@
+<!--
+Style the form until it looks like the form shown in the picture
+
+Cursor
+Set the cursor to look different when hovering over different form elements
+Use a custom image for the cursor when hovering over the submit button
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms style</title>
+    <style>
+        body{
+            border: 1px solid black;
+            width: 27%;
+            margin: 0px auto;
+            padding: 20px;
+            opacity: 0.8;
+        }
+        div{
+            margin: 0px auto;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: rgb(221, 220, 220);
+        }
+        h1{
+            text-align: center;
+            cursor: pointer;
+        }
+        span{
+            color: rgb(250, 165, 8);
+        }
+        input[type=text]{
+            width: 95%;
+            font-family: sans-serif;
+            text-align: left;
+            border-radius: 5px;
+            cursor: wait;
+            
+        }
+        input[type=email]{
+            width: 95%;
+            font-family: sans-serif;
+            text-align: left;
+            border-radius: 5px;
+            cursor: help;
+        }
+        input[type=tel]{
+            width: 95%;
+            font-family: sans-serif;
+            text-align: left;
+            border-radius: 5px;
+            cursor: crosshair;
+        }
+        input[type=address]{
+            width: 95%;
+            font-family: sans-serif;
+            text-align: left;
+            border-radius: 5px;
+            cursor: all-scroll;
+        }
+        input[type=submit] {
+            width: 100%;
+            background-color: rgb(172, 3, 3);
+            height: 25px;
+            color: white;
+            cursor: url('super-mario-png.png'), auto;
+            border-radius: 5px;
+            font-size: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Form<span>Get</span></h1>
+        <hr><br>
+        <form action="http://127.0.0.1:5500/Web/CSS/forms.html">
+
+            <label for="fullname">Full Name</label>
+            <br>
+            <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+            <br><br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Email">
+            <br><br>
+
+            <label for="contact">Contact Number</label>
+            <br>
+            <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Contact Number">
+            <br><br>
+
+            <label for="address">Address</label>
+            <br>
+            <input type="address" id="address" name="address" placeholder="Address">
+            <br><br><br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+</html>
