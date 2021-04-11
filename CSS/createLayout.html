@@ -1,0 +1,186 @@
+<!--
+    Float    
+Create navigation
+Navigation should be implemented as unordered list
+Transform navigation using CSS to be in one line
+Navigation is floated to the right
+Width of navigation container is 960px
+
+
+Recreate the following layout (on the next page)
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(134, 9, 9);
+            width: 960px;
+        }
+        li{
+            float:right;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 12px 14px;
+            text-decoration: none;
+        }
+        img{
+            width: 960px;
+        }
+        table{
+            width: 960px;
+        }
+        
+        span{
+            position:absolute;
+            top: 40%;
+            left:30%;
+            font-size: 25px;
+        }
+        td{
+            position: relative;
+
+        }
+        .dropdown-content {
+            display: block;
+            position: absolute;
+            top:1px;
+            right:0px;
+            background-color: orange;
+            z-index: 1;
+            padding: 8px 15px 8px 15px;
+            width:260px;
+            height:220px;
+            color: white;
+        }
+        .dropdown-content a {
+
+            color: black;
+            padding: 10px 0px;
+            margin-right:5px;
+            text-decoration: none;
+            font-size: 18px;
+            display: block;
+            text-align: left;
+            border-bottom: black solid thin;
+        }
+        .dropdown-content a:hover {background-color: #d1cccc;}
+        .reddiv{
+            background-color: rgb(134, 9, 9);
+            position:relative;
+            width:300px;
+            height:200px;
+            color: white;
+            margin-top:10px;
+        }
+        .bluediv{
+            background-color: rgb(3, 3, 80);
+            position:relative;
+            width:300px;
+            height:200px;
+            color: white;
+            margin-top:10px;
+        }
+        .orangediv{
+            background-color: orange;
+            position:relative;
+            width:300px;
+            height:200px;
+            color: white;
+            margin-top:10px;
+        }
+        .greendiv{
+            background-color: rgb(110, 190, 110);
+            position:relative;
+            width:300px;
+            height:200px;
+            color: white;
+            margin-top:10px;
+        }
+        .bottomnavigation{
+            width:100%;
+            background-color: rgb(3, 3, 80);
+            padding-left:50px;
+        }
+        .bottomnavigation li{
+            float:left;
+        }
+        .global{
+            margin: 0px auto;
+            width: 960px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="global">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Blog</li>
+        </ul>
+
+        <img src="https://pixelmechanics.com.sg/wp-content/uploads/2019/06/html-vs-css.jpg" alt="CSS and HTML Logo">
+
+        <table>
+            <tr>
+                <td>
+                    <div class="reddiv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+                <td>
+                    <div class="bluediv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+                <td>
+                    <div class="dropdown-content">
+                        <a href="#">Rebuilding slack.com</a>
+                        <a href="#">Zasto bootcamp format?</a>
+                        <a href="#">React - prozor u svet web aplikacija</a>
+                        <a href="#">Najveca zabluda o programerima u Srbiji</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="orangediv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+                <td>
+                    <div class="greendiv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+                <td>
+                    <div class="reddiv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="bluediv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+                <td>
+                    <div class="orangediv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+                <td>
+                    <div class="greendiv"><span>300 x 200</span></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate tempor arcu, ac pellentesque ex. Nullam posuere, sem et laoreet vulputate, odio dui efficitur neque, a porta tellus diam id lectus. Mauris tincidunt pulvinar arcu a tempor. Nullam maximus, quam vel sagittis pellentesque, erat libero tristique sapien, id porttitor massa risus ut velit. Sed consequat vel lacus sed iaculis. Aliquam elementum nulla quis scelerisque blandit. Sed nisi nulla, mattis vitae libero vel, pulvinar maximus sem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut accumsan ullamcorper augue eu mollis.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <ul class="bottomnavigation">
+        <li>Bit student</li>
+    </ul>
+</body>
+</html>
