@@ -1,0 +1,106 @@
+<!--
+    Z-Index
+Creating divs
+Create a page with three divs
+Elements on the page should be 200px wide and 200px high
+Each div should be of different color
+Divs should be stacked one on top of the other
+
+Arranging divs
+Copy code from the first section and create a new one
+Position divs as presented in the example
+Use relative position for positioning
+
+picture
+
+Rearranging divs and stacking order
+Create one more section using html code from the first section
+Arrange divs as shown in the example
+This time use absolute positioning
+
+Change stacking order using z-index
+
+picture
+
+-->
+
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Document</title>
+    <style>
+        
+        div {
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        .div1{
+            background-color: yellowgreen;
+        }
+        .div2{
+            background-color: tomato;
+        }
+        .div3{
+            background-color: black;
+        }
+        .div11{
+            position: relative;
+            top: 300px;
+            background-color: rgb(149, 247, 37);
+        }
+        .div22{
+            position: relative;
+            left: 100px;
+            top: 200px;
+            background-color: rgb(250, 40, 40);
+        }
+        .div33{
+            position: relative;
+            top: 100px;
+            left: 200px;;
+            background-color: black;
+        }
+        .div111{
+            display:inline-block;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            background-color: rgb(149, 247, 37);
+            z-index: 3;
+        }
+        .div222{
+            display:inline-block;
+            position: absolute;
+            right: 105px;
+            top: 105px;
+            background-color: rgb(250, 40, 40);
+            z-index: 2;
+        }
+        .div333{
+            display:inline-block;
+            position: absolute;
+            right: 205px;
+            top: 205px;
+            background-color: black;
+            z-index: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+    <br><br><br>
+    <div class="div11"></div>
+    <div class="div22"></div>
+    <div class="div33"></div>
+    <br><br><br>
+    <div class="div111"></div>
+    <div class="div222"></div>
+    <div class="div333"></div>
+
+</body>
+</html>
