@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2</title>
+  <style type="text/css">
+
+    @font-face {
+      font-family: "robotoblack";
+      src: url(./assets/fonts/Roboto-Black.ttf);
+    }
+    @font-face {
+      font-family: "robotoblack_italic";
+      src: url(./assets/fonts/Roboto-BlackItalic.ttf);
+    }
+    @font-face {
+      font-family: "robotobold";
+      src: url(./assets/fonts/Roboto-Bold.ttf);
+    }
+    @font-face {
+      font-family: "robotobold_italic";
+      src: url(./assets/fonts/Roboto-BoldItalic.ttf);
+    }
+    @font-face {
+      font-family: "robotoitalic";
+      src: url(./assets/fonts/Roboto-Italic.ttf);
+    }
+    @font-face {
+      font-family: "robotolight";
+      src: url(./assets/fonts/Roboto-Light.ttf);
+    }
+    @font-face {
+      font-family: "robotolight_italic";
+      src: url(./assets/fonts/Roboto-LightItalic.ttf);
+    }
+    @font-face {
+      font-family: "robotomedium";
+      src: url(./assets/fonts/Roboto-Medium.ttf);
+    }
+    @font-face {
+      font-family: "robotomedium_italic";
+      src: url(./assets/fonts/Roboto-MediumItalic.ttf);
+    }
+    @font-face {
+      font-family: "robotoregular";
+      src: url(./assets/fonts/Roboto-Regular.ttf);
+    }
+    @font-face {
+      font-family: "robotothin";
+      src: url(./assets/fonts/Roboto-Thin.ttf);
+    }
+    @font-face {
+      font-family: "robotothin_italic";
+      src: url(./assets/fonts/Roboto-ThinItalic.ttf);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "robotoregular";
+    }
+
+    body {
+      margin: 0;
+    }
+
+    header {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .firstBanner {
+      width: 100%;
+      background: #ffffff url("./assets/images/banner3.jpg") no-repeat;
+      background-size: cover;
+      text-align: center;
+      padding: 100px 80px 40px;
+    }
+    .firstBanner h3 {
+      color: #eeeeee;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0;
+      font-weight: normal;
+      font-size: 24px;
+    }
+    .firstBanner a {
+      display: inline-block;
+      margin: auto;
+      padding: 8px 25px;
+      background-color: #1d6fb2;
+      border-radius: 30px;
+      text-decoration: none;
+      color: white;
+      font-size: 13px;
+    }
+
+    .sign{
+      text-align: center;
+      margin-top: 20px;
+    }
+    .sign span {
+      display: inline-block;
+      padding: 0 10px;
+      color: #777777;
+      font-size: 25px;
+      font-weight: bolder;
+    }
+    .sign span:first-child {
+      border-top: 5px solid #777777;
+      border-bottom: 5px solid #777777;
+      border-left: 5px solid #777777;
+      color: #f89a36;
+    }
+
+    nav ul {
+      width: 100%;
+      margin-top: 8px;
+      padding: 5px 0;
+    }
+    nav {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    nav ul li {
+      background-color: #72addb;
+      text-align: center;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 10px;
+      width:100%;
+      font-size: 12px;
+      font-weight: bold;
+    }
+ 
+    section {
+      text-align: center;
+    }
+
+    section article {
+      text-align: left;
+    }
+
+    section h1 {
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .border {
+    width: 100%;
+    text-align: center;
+}
+
+    .row {
+      display: inline-block;
+      height: 20px;
+      width: 40px;
+      border-top: 2px solid black;
+    }
+
+    .romb {
+      display: inline-block;
+      width:20px;
+      height: 20px;
+      border: 2px solid black;
+      margin: 0px 10px;
+      transform: rotate(45deg);
+      position: relative;
+      top: -9px;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #4e92ca;
+    }
+
+    .innerBox { 
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    article {
+      color: #6b6666;
+    }
+
+    article q {
+      font-family: "robotoblack";
+      line-height: 30px;
+      font-size: 14px;
+    }
+
+    article ul {
+      list-style-image: url('./assets/images/arrow_bullet.png');
+      list-style-position: inside;
+      margin-bottom: 30px;
+    }
+
+    article ul li {
+      line-height: 35px;
+      font-size: 14px;
+    }
+
+    
+    .restContent::before, .restContent::after {
+      content: '';
+      display: table;
+    }
+
+    .picture, .picture img {
+      width: 100%;
+    }
+
+    .rating {
+      padding: 20px 20px;
+      background-color: #74aedb;
+      margin-bottom: 20px;
+    }
+
+    .profileImg {
+      float: left;
+      width: 20%;
+      margin-right: 20px;
+    }
+
+    .profileImg img {
+      width:100%;
+      border: 2px solid white;
+      border-radius: 50%;
+      padding: 2px;
+    }
+
+    .rate {
+      float: left;
+    }
+
+    .rating > p {
+      clear: both;
+      text-align: left;
+      color: white;
+      line-height: 36px;
+    }
+
+    .rate p {
+      font-weight: bold;
+      margin: 7px 0;
+    }
+
+    .rate-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .rate p i {
+      color: white;
+    }
+
+    .green {
+      background-color: #3bd897;
+    }
+
+    .pink {
+      background-color: #e94674;
+    }
+
+    .address {
+      color: #f0dfe5;
+      padding: 30px;
+    }
+
+    .contact i {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .address h4 {
+      margin: 0;
+      font-weight: normal;
+      font-size: 23px;
+    }
+
+    .address p {
+      margin-bottom: 0;
+    }
+
+    .icons {
+      margin-top: 25px;
+    }
+
+    .blue {
+      background-color: #305eca;
+    }
+
+    .light-blue {
+      background-color: #70bcf7;
+    }
+
+    .last {
+      padding: 0;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+      font-size: 20px;
+      border: 2px solid #645f5f;
+    }
+
+    textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 20px;
+      font-size: 20px;
+      border: 2px solid #979595;
+    }
+
+    input[type = "submit"] {
+      width:30%;
+      max-width: 150px;
+      padding: 10px;
+      background-color: #d17608;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      color: white;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .endContent {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .form {
+      padding: 0 20px;
+    }
+
+    footer {
+      background-color: #212121;
+      text-align: center;
+      padding: 35px 0;
+    }
+
+    footer ul {
+      margin-bottom: 35px;
+    }
+
+    footer li {
+      display: inline-block;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: white;
+      font-size: 14px;
+    }
+    footer p {
+      margin: 0;
+      color: white;
+      font-size: 14px;
+    }
+
+
+    
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+
+    header {
+      position: relative;
+    }
+
+    .sign {
+      position: absolute;
+      top: 5%;
+      left: 3%;
+      margin: 0;
+    }
+
+    .sign span:first-child {
+      border-color: white;
+    }
+
+    .sign span:last-child {
+      color: white;
+    }
+
+    nav {
+      position: absolute;
+      top: 5%;
+      right: 0;
+      width: 45%;
+    }
+    nav ul {
+      margin: 0;
+      text-align: right;
+    }
+    nav ul li {
+      background-color: transparent;
+      display: inline-block;
+      padding-right: 3%;
+    }
+
+    .firstBanner h3 {
+      font-size: 28px;
+    }
+
+    .articleContent {
+      float: left;
+      width: 50%;
+      padding-right: 1%;
+    }
+
+    .picture {
+      float: left;
+      width: 50%;
+      padding-left: 1%;
+      margin-bottom: 30px;
+    }
+
+    .articleContent:last-child {
+      clear: both;
+      width: 100%;
+    }
+
+    .articleContent h2 {
+      margin-top: 0;
+    }
+
+    .border {
+      margin-bottom: 30px;
+    }
+
+    .rating {
+      float: left;
+      width: 48%;
+      margin-right: 4%;
+    }
+
+    .rating:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    .address {
+      float: left;
+      width: 50%;
+      height: 200px;
+    }
+
+    .address .img-address,
+    .address .img-address img {
+      height: 100%;
+    }
+
+    .address.last {
+      clear: both;
+      width: 100%;
+      height: 400px;
+    }
+
+    form {
+      padding: 0 42px;
+    }
+
+    .form form input {
+      float: left;
+      width: 32%;
+      margin-right: 2%;
+    }
+
+    .form form input:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .form form textarea {
+      clear: both;
+    }
+
+    #submit {
+      float: none;
+    }
+
+  }
+
+
+  @media screen and (min-width: 1200px) {
+
+    header {
+      position: relative;
+    }
+
+    .firstBanner {
+      padding: 150px 80px 150px;
+    }
+
+    .firstBanner h3 {
+      margin-bottom: 40px
+    }
+
+    .sign {
+      position: absolute;
+      top: 5%;
+      left: 3%;
+      margin: 0;
+    }
+
+    .sign span:first-child {
+      border-color: white;
+    }
+
+    .sign span:last-child {
+      color: white;
+    }
+
+    nav {
+      position: absolute;
+      top: 5%;
+      right: 0;
+      width: 45%;
+    }
+    nav ul {
+      margin: 0;
+      text-align: right;
+    }
+    nav ul li {
+      background-color: transparent;
+      display: inline-block;
+      padding-right: 3%;
+    }
+
+    .firstBanner h3 {
+      font-size: 28px;
+    }
+
+    section {
+      margin: 100px 0px;
+    }
+    .innerBox {
+      margin: 100px auto;
+    }
+
+    .innerBox:first-child {
+      max-width: 1100px;
+    }
+
+    .articleContent {
+      float: left;
+      width: 34%;
+      text-align: center;
+    }
+
+    .picture {
+      float: left;
+      width: 32%;
+      margin-bottom: 30px;
+      padding: 0 4%;
+    }
+
+    .articleContent h2 {
+      margin-top: 0;
+    }
+
+    .border {
+      margin-bottom: 30px;
+    }
+
+    .row {
+        display: inline-block;
+        width: 100px;
+    }
+
+    .rating {
+      float: left;
+      width: 32%;
+      margin-right: 2%;
+    }
+
+    .rating:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .address {
+      float: left;
+      width: 25%;
+      height: 200px;
+    }
+
+    .address .img-address,
+    .address .img-address img {
+      height: 100%;
+    }
+
+    .address.last {
+      clear: both;
+      width: 100%;
+      height: 400px;
+    }
+
+    form {
+      padding: 0 42px;
+    }
+    .form {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .form form input {
+      float: left;
+      width: 32%;
+      margin-right: 2%;
+    }
+
+    .form form input:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    .form form textarea {
+      clear: both;
+    }
+
+    #submit {
+      float: none;
+    }
+
+  }
+  </style>
+</head>
+<body>
+  <div>
+    <header>
+      <div class="firstBanner">
+        <h3>WE SHAPE OUR BUILDINGS THEREAFTER THEY SHAPE US</h3>
+        <a href="#">Read More</a>
+      </div>
+      <div class="sign">
+        <span>BUILD</span>
+        <span>ESTATE</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="innerBox">
+        <h1>Who We Are</h1>
+        <div class="border">
+              <div class="row"></div>
+              <div class="romb"></div>
+              <div class="row"></div>
+        </div>
+        <article class = "restContent">
+          <div class="articleContent">
+            <h2>Welcome To Our Build Estate</h2>
+            <p><q>If you can build buildings, why sit on the beach? We always think of buildings in their settings,
+                    but so do other architects.</q></p>
+            <ul>
+              <li>International Office Buildings.</li>
+              <li>Apartment On Premier House.</li>
+              <li>Prices Are Low & Parking Allowance.</li>
+              <li>Best Design Archicteture</li>
+            </ul>
+          </div>
+          <div class="picture">
+            <img src="assets/images/about.jpg" alt="about img">
+          </div>
+          <div class="articleContent">
+            <h2>We Make Your Dream Home</h2>
+            <p><q>For decades engineers have stood accussed that their buildings do not have any cultural value. We have attempt to liberate engineering of this accusation.</q></p>
+            <ul>
+              <li>Great Engineers Ideas.</li>
+              <li>Planning For Future Model Buildings.</li>
+              <li>Modern Apartment With Large Space.</li>
+              <li>New Residental Complex Features.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="innerBox">
+        <h1>What People Says</h1>
+        <div class="border">
+          <div class="row"></div>
+          <div class="romb"></div>
+          <div class="row"></div>
+        </div>
+        <div> 
+          <div class="rating">
+            <div class="rate-header">
+              <div class="profileImg"><img src="./assets/images/t1.jpg" alt="profil image"></div>
+              <div class="rate">
+                <p>WILLIAMSON</p>
+                <p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis hic commodi officia ducimus aspernatur, reprehenderit iste recusandae sunt nesciunt, laborum nob</p>
+          </div>
+          <div class="rating">
+            <div class="rate-header">
+              <div class="profileImg"><img src="./assets/images/t2.jpg" alt="profil image"></div>
+              <div class="rate">
+                <p>JENIFER LOPEZ</p>
+                <p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis hic commodi officia ducimus aspernatur, reprehenderit iste recusandae sunt nesciunt, laborum nobis </p>
+          </div>
+          <div class="rating">
+            <div class="rate-header">
+              <div class="profileImg"><img src="./assets/images/t3.jpg" alt="profil image"></div>
+              <div class="rate">
+                <p>SELENA GOMEZ</p>
+                <p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </p>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo perspiciatis hic commodi officia ducimus aspernatur, reprehenderit iste recusandae sunt nesciunt, laborum nob!</p>
+          </div>
+        </div>
+        <section class="restContent">
+          <h1>Get In Touch With Us</h1>
+          <div class="border">
+            <div class="row"></div>
+            <div class="romb"></div>
+            <div class="row"></div>
+          </div>
+          <div class="contact">
+            <div class="address green">
+              <h4>CONTACT US</h4>
+              <p><i class="fa fa-mobile fa-2x"></i>+0(12) 000 123 3120</p>
+              <p><i class="fa fa-envelope fa-lg"></i>mail@example.com</p>
+            </div>
+            <div class="address pink">
+              <h4>CONNECT US</h4>
+              <div class="icons">
+                <i class="fa fa-facebook fa-lg"></i>
+                <i class="fa fa-twitter fa-lg"></i>
+                <i class="fa fa-rss fa-lg"></i>
+                <i class="fa fa-vk fa-lg"></i>
+              </div>
+            </div>
+            <div class="address blue">
+              <h4>ADDRESS</h4>
+              <p><i class="fa fa-map-marker" aria-hidden="true"></i>1680 Richmond St, Corner in, ON N58 3d7, USA</p>
+            </div>
+            <div class="address light-blue">
+              <div class="img-address"><img src="assets/images/house.png" alt="house"></div>
+            </div>
+              <div class="address last">
+                <div class="iframe"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.294472119432!2d-9.133049480419967!3d38.71104770999092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19347613ee43b5%3A0xc37964f5e5b83e8!2zQWxmYW1hLCDQm9C40YHQsNCx0L7QvSwg0J_QvtGA0YLRg9Cz0LDQu9C40ZjQsA!5e0!3m2!1ssr!2srs!4v1620484461667!5m2!1ssr!2srs" width=100% height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="endContent">
+          <h1>Mail Us</h1>
+          <div class="border">
+            <div class="row"></div>
+            <div class="romb"></div>
+            <div class="row"></div>
+          </div>
+          <div class="form">
+            <form action="">
+              <input name="name" type="text" placeholder="Name">
+              <input name="email" type="email" placeholder="Email">
+              <input name="telephone"type="number" placeholder="Telephone">
+              <textarea name="message" rows="10" placeholder="Message"></textarea>
+              <input value="Submit" id="submit" type="submit">
+            </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Stats</a></li>
+        <li><a href="#">Agents</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+      <p>© 2017 Build Estate. All Rights Reserved</p>
+    </footer>
+  </div>
+</body>
+</html>

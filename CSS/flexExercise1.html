@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexExercise1</title>
+    <style>
+        .parent{
+            display:flex;
+            padding:5px;
+            background-color: black;
+        }
+        .prva{
+            background-color: rgb(255, 238, 80);
+            height: 170px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .druga{
+            background-color: coral;
+            height: 170px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .treca{
+            background-color: rgb(51, 1, 51);
+            height: 170px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cetvrta{
+            background-color: rgb(198, 78, 202);
+            flex:2;
+            order:1;
+            height:510px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .pet{
+            flex:1;
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <main class="parent">
+        <div class="pet">
+            <div class="prva">1</div>
+            <div class="druga">2</div>
+            <div class="treca">3</div>
+        </div>
+        <div class="cetvrta">4</div>
+    </main>
+</body>
+</html>

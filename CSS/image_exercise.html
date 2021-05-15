@@ -1,0 +1,109 @@
+<!--
+    Size
+Find an image with a wide aspect ratio (e.g. 16:9, 21:9...)
+Include that image three times on the page
+Each image should be in a separate row
+The first image should be 200px high
+The second image should be 200px wide
+The third image should be 200px wide and 200px high
+
+Aligning
+Modify the previously example
+Align the first image to the right
+Align the second image in the center
+Align the third one to the left
+
+Background
+Create a page with a main title
+Add a couple of subheadings
+After each subheading, add a single paragraph with some text
+The page should be long enough for the scrollbar to appear
+
+Repeat
+Find an image that can be included as a repeating image on the page
+Use that image to set a background image on the body element
+
+Attachment
+Modify the previous example
+Prevent image from moving while the user scrolls down the page
+
+Position
+Use the previous code structure
+Remove previously defined styles for the background image
+Add a new background image. It shouldn’t be repeated
+Image should be horizontally positioned on the right
+The image should be positioned vertically in the body center
+Make it fixed
+
+Size
+Modify the previous example
+Make image stretch and cover the whole body
+However, the image should not be deformed (aspect ratio has to be preserved)
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        /*body{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkktR36aUfzq7Fj-AbOOGLgW_Lu4Y3aw0XEw&usqp=CAU);
+            color:blanchedalmond;
+            background-attachment: fixed;
+        }*/
+
+        /*body{
+            background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/coronavirus-city-drawing-zoom-background-design-template-b3a0988fc70ba1f4e32ac108990c1d0d_screen.jpg?ts=1586319874);
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-attachment:fixed;
+        }*/
+
+        body{background-image: url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/coronavirus-city-drawing-zoom-background-design-template-b3a0988fc70ba1f4e32ac108990c1d0d_screen.jpg?ts=1586319874);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment:fixed;
+            background-size:cover;
+        }*/
+        .prva_slika{
+            height:200px;
+            float:right;
+        }
+        .druga_slika{
+            width:200px;
+            margin:200px auto 0px auto;
+            display:block;
+        }
+        .treca_slika{
+            height:200px;
+            width:200px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <!--<img class="prva_slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MpQhjh9aDECxeFqU4Avh6I-eVdVVmkgFaA&usqp=CAU" alt="Covid 19">
+    <br><br>
+    <img class="druga_slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MpQhjh9aDECxeFqU4Avh6I-eVdVVmkgFaA&usqp=CAU" alt="Covid 19">
+    <br><br>
+    <img class="treca_slika" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MpQhjh9aDECxeFqU4Avh6I-eVdVVmkgFaA&usqp=CAU" alt="Covid 19">
+    <br><br><br><br><br><br><br><br><br><br> -->
+    <h1>Nesto vrlo zanimljivo...</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus enim ante, non sodales est imperdiet ac. Proin ut molestie enim, a euismod nisi. Quisque rutrum justo sed lacinia porta. Morbi rhoncus non justo eget consequat. Mauris id nulla urna. Vivamus aliquam urna et eleifend suscipit. Duis egestas, ligula et cursus vulputate, augue leo ornare felis, at condimentum felis diam vel ipsum. Aliquam erat volutpat. Sed tincidunt tellus erat, sed efficitur felis vestibulum mollis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus enim ante, non sodales est imperdiet ac. Proin ut molestie enim, a euismod nisi. Quisque rutrum justo sed lacinia porta. Morbi rhoncus non justo eget consequat. Mauris id nulla urna. Vivamus aliquam urna et eleifend suscipit. Duis egestas, ligula et cursus vulputate, augue leo ornare felis, at condimentum felis diam vel ipsum. Aliquam erat volutpat. Sed tincidunt tellus erat, sed efficitur felis vestibulum mollis.</p>
+
+    <h2>Nesto jos zanimljivije</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus enim ante, non sodales est imperdiet ac. Proin ut molestie enim, a euismod nisi. Quisque rutrum justo sed lacinia porta. Morbi rhoncus non justo eget consequat. Mauris id nulla urna. Vivamus aliquam urna et eleifend suscipit. Duis egestas, ligula et cursus vulputate, augue leo ornare felis, at condimentum felis diam vel ipsum. Aliquam erat volutpat. Sed tincidunt tellus erat, sed efficitur felis vestibulum mollis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus enim ante, non sodales est imperdiet ac. Proin ut molestie enim, a euismod nisi. Quisque rutrum justo sed lacinia porta. Morbi rhoncus non justo eget consequat. Mauris id nulla urna. Vivamus aliquam urna et eleifend suscipit. Duis egestas, ligula et cursus vulputate, augue leo ornare felis, at condimentum felis diam vel ipsum. Aliquam erat volutpat. Sed tincidunt tellus erat, sed efficitur felis vestibulum mollis.</p>
+
+    <h2>Nesto ultra zanimljivo...</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus enim ante, non sodales est imperdiet ac. Proin ut molestie enim, a euismod nisi. Quisque rutrum justo sed lacinia porta. Morbi rhoncus non justo eget consequat. Mauris id nulla urna. Vivamus aliquam urna et eleifend suscipit. Duis egestas, ligula et cursus vulputate, augue leo ornare felis, at condimentum felis diam vel ipsum. Aliquam erat volutpat. Sed tincidunt tellus erat, sed efficitur felis vestibulum mollis.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus enim ante, non sodales est imperdiet ac. Proin ut molestie enim, a euismod nisi. Quisque rutrum justo sed lacinia porta. Morbi rhoncus non justo eget consequat. Mauris id nulla urna. Vivamus aliquam urna et eleifend suscipit. Duis egestas, ligula et cursus vulputate, augue leo ornare felis, at condimentum felis diam vel ipsum. Aliquam erat volutpat. Sed tincidunt tellus erat, sed efficitur felis vestibulum mollis.</p>
+    
+
+
+
+
+</body>
+</html>
