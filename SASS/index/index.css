@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*
+Take the “ID Card” project that we created in the first week (https://drive.google.com/drive/folders/0B_cry3I2R3q7SHJtX3lOVUgybXM)
+Apply style to it and use variables for colors and width (index.html, index.scss)*/
+.container {
+  background-color: darkgrey;
+  width: 600px;
+}
+
+.title {
+  background-color: darkviolet;
+  width: 400px;
+}
+
+.even {
+  color: darkgreen;
+}
+
+#important {
+  background-color: darkblue;
+  color: darkgrey;
+  width: 200px;
+}
+
+#footer {
+  background-color: darkgreen;
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

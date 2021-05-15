@@ -1,0 +1,16 @@
+/*
+Importing Other SASS Files
+• Split all sass styles into main, variables and mixins
+• The main scss file should include variables and mixins
+• Run the transpiling process and include the transpiled style in the
+HTML page
+*/
+
+
+@mixin boxShadow ($color1) {
+    box-shadow: $color1;
+}
+
+@mixin textShadow ($color2) {
+    text-shadow: $color2;
+}

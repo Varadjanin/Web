@@ -1,0 +1,36 @@
+/*
+Mixins
+• Create mixins for text shadow
+• Create mixins for box shadow
+• Create a page with multiple elements
+• Use the mixin for text shadow on one element
+• For some other element, use the mixin for box shadow
+
+Importing Other SASS Files
+• Split all sass styles into main, variables and mixins
+• The main scss file should include variables and mixins
+• Run the transpiling process and include the transpiled style in the
+HTML page
+*/
+
+/*
+@mixin boxShadow ($color1) {
+    box-shadow: $color1;
+}
+
+@mixin textShadow ($color2) {
+    text-shadow: $color2;
+}
+*/
+
+@import 'mixins';
+
+
+h1 {
+    @include textShadow(3px 3px 10px rgb(89, 104, 89));
+}
+
+h2 {
+    @include boxShadow(5px 10px inset rgb(106, 231, 106));
+}
+

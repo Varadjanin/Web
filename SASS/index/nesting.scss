@@ -1,0 +1,19 @@
+/*
+Nesting
+• Continue refactoring the ID Card project
+• Rewrite styles using nesting
+
+*/
+
+
+.container {
+    h1 {
+        background-color: rgb(230, 52, 126);
+    }
+    h2 {
+        background-color: rgb(179, 26, 179);
+    }
+    table {
+        background-color: rosybrown;
+    }
+}

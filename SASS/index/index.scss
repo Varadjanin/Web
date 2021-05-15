@@ -1,0 +1,33 @@
+/*
+Take the “ID Card” project that we created in the first week (https://drive.google.com/drive/folders/0B_cry3I2R3q7SHJtX3lOVUgybXM)
+Apply style to it and use variables for colors and width (index.html, index.scss)*/
+
+$color1: darkblue;
+$color2: darkviolet;
+$color3: darkgrey;
+$color4: white;
+$color5: darkgreen;
+$width1: 200px;
+$width2: 400px;
+$width3: 600px;
+
+.container{
+    background-color: $color3;
+    width: $width3;
+}
+.title{
+    background-color: $color2;
+    width: $width2;
+}
+.even{
+    color: $color5;
+}
+#important{
+    background-color: $color1;
+    color: $color3;
+    width: $width1;
+}
+#footer{
+    background-color: $color5;
+    color: $color4;
+}
