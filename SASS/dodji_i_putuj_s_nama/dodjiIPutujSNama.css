@@ -1,25 +1,169 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 100%;
 }
 
-.container {
+nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container img {
-  width: 20px;
-  height: 20px;
+nav img {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
 }
 
-.container ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-size: 20px;
   list-style-type: none;
-  text-align: right;
+}
+
+header {
+  position: relative;
+  background-image: url("https://travelpassionate.com/wp-content/uploads/2017/08/Navagio-beach-with-shipwreck-and-flowers-against-sunset-Zakynthos-island-Greece-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+header h1 {
+  position: relative;
+  left: 920px;
+  top: 600px;
+  color: white;
+}
+
+.onama {
+  position: relative;
+}
+
+.onama h2 {
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+  letter-spacing: 2px;
+}
+
+.onama .latin {
+  position: relative;
+  left: 200px;
+  width: 1000px;
+}
+
+.onama ul {
+  list-style: square outside url("../dodji_i_putuj_s_nama/white-square-empty-mockup-vector-10975217.jpg");
+}
+
+.onama button {
+  position: relative;
+  left: 575px;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.usluge {
+  background-color: #2b94e9;
+  border-top-left-radius: 150px;
+}
+
+.usluge h2 {
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+  letter-spacing: 2px;
+  padding-top: 10px;
+}
+
+.usluge .containerUsluge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.noveUsluge {
+  position: relative;
+  left: 200px;
+  width: 1000px;
+}
+
+.noveUsluge h2 {
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+  letter-spacing: 2px;
+}
+
+.noveUsluge button {
+  position: relative;
+  left: 380px;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.preporuke {
+  background-color: #2b94e9;
+  border-top-right-radius: 150px;
+}
+
+.preporuke .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.preporuke .container img {
+  width: 200px;
+}
+
+.preporuke .container article {
+  margin: 0px 100px;
+  text-align: center;
+}
+
+.preporuke .container h4 {
+  color: white;
+}
+
+.preporuke h2 {
+  padding-top: 20px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+  letter-spacing: 2px;
+}
+
+footer {
+  background-color: #050522;
+  text-align: center;
+  color: white;
+  padding: 10px;
 }
 /*# sourceMappingURL=dodjiIPutujSNama.css.map */

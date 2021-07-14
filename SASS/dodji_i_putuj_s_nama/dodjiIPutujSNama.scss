@@ -2,19 +2,152 @@
 
 * {
     box-sizing: border-box;
+    width: 100%;
 }
-.container {
-    display:flex;
 
-    img{
-        width: 20px;
-        height: 20px;
+nav {
+    
+    .container {
+        display:flex;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin-left: 100px;
     }
     
     ul{
         display:flex;
-        font-size: 10px;
+        justify-content: end;
+        font-size: 20px;
         list-style-type: none;
-        text-align: right;
+        
     }
+}
+
+header {
+    position: relative;
+    background-image: url("https://travelpassionate.com/wp-content/uploads/2017/08/Navagio-beach-with-shipwreck-and-flowers-against-sunset-Zakynthos-island-Greece-min.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 700px;
+    
+    h1 {
+        position: relative;
+        left: 920px;
+        top: 600px;
+        color: white;
+    }
+}
+
+.onama{
+    position: relative;
+
+    h2{
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        letter-spacing: 2px;
+    }
+    .latin{
+        position: relative;
+        left: 200px;
+        width: 1000px;
+    }
+
+    ul{
+        list-style: square outside url("../dodji_i_putuj_s_nama/white-square-empty-mockup-vector-10975217.jpg");
+    }
+
+    button{
+        position: relative;
+        left: 575px;
+        text-align: center;
+        width: 180px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+    }
+}
+
+.usluge{
+    
+    background-color: rgb(43, 148, 233);
+    border-top-left-radius: 150px;
+
+    h2{
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        letter-spacing: 2px;
+        padding-top: 10px;
+    }
+
+    .containerUsluge {
+        display:flex;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+}
+
+.noveUsluge{
+    position: relative;
+    left: 200px;
+    width: 1000px;
+
+    h2{
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        letter-spacing: 2px;
+    }
+
+    button{
+        position: relative;
+        left: 380px;
+        text-align: center;
+        width: 180px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+    }
+}
+
+.preporuke{
+    background-color: rgb(43, 148, 233);
+    border-top-right-radius: 150px;
+
+    .container{
+        display:flex;
+        padding-bottom:20px;
+
+        img{
+            width:200px;
+        }
+        article{
+            margin: 0px 100px;
+            text-align: center;
+        }
+        h4{
+            color:white;
+        }
+    }
+
+    h2{
+        padding-top:20px;
+        text-align: center;
+        text-decoration-line: underline;
+        text-decoration-color: blue;
+        letter-spacing: 2px;
+    }
+}
+
+footer{
+    background-color: rgb(5, 5, 34);
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
